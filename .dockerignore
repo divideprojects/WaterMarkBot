@@ -1,0 +1,6 @@
+**
+!pyproject.toml
+!poetry.lock
+!dpwatermarkbot
+!Makefile
+!setup
