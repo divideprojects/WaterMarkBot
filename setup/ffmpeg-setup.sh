@@ -13,5 +13,5 @@ fi
 
 wget "https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-${arch}-static.tar.xz"
 tar xvf ffmpeg*.xz
-cp ffmpeg-*-static/ffmpeg "/static-ffmpeg/ffmpeg"
-cp ffmpeg-*-static/ffprobe "/static-ffmpeg/ffprobe"
+cp ffmpeg-*-static/ffmpeg "/usr/local/bin/ffmpeg"
+cp ffmpeg-*-static/ffprobe "/usr/local/bin/ffprobe"
