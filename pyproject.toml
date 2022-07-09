@@ -18,7 +18,7 @@ cachetools = "^5.2.0"
 pymongo = "^4.1.1"
 Pillow = "^9.2.0"
 prettyconf = "^2.2.1"
-pickledb-ujson = "^1.0.6"
+pickledb-ujson = "^1.0.7"
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"
