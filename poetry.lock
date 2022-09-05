@@ -24,7 +24,7 @@ multidict = ">=4.5,<7.0"
 yarl = ">=1.0,<2.0"
 
 [package.extras]
-speedups = ["aiodns", "brotli", "cchardet"]
+speedups = ["Brotli", "aiodns", "cchardet"]
 
 [[package]]
 name = "aiosignal"
@@ -440,8 +440,8 @@ optional = false
 python-versions = "*"
 
 [[package]]
-name = "pyrogram"
-version = "2.0.44"
+name = "Pyrogram"
+version = "2.0.49"
 description = "Elegant, modern and asynchronous Telegram MTProto API framework in Python for users and bots"
 category = "main"
 optional = false
@@ -564,7 +564,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "fab2ef720422fa97f72a8702f8f117f7b3928cc33fc3cde4f241ffc0d83198f4"
+content-hash = "efa76c3380e62d23fb6897a6e803630960385a08289d5516f8b18a15f3679b00"
 
 [metadata.files]
 aiofiles = [
@@ -1111,9 +1111,9 @@ pyreadline3 = [
     {file = "pyreadline3-3.4.1-py3-none-any.whl", hash = "sha256:b0efb6516fd4fb07b45949053826a62fa4cb353db5be2bbb4a7aa1fdd1e345fb"},
     {file = "pyreadline3-3.4.1.tar.gz", hash = "sha256:6f3d1f7b8a31ba32b73917cefc1f28cc660562f39aea8646d30bd6eff21f7bae"},
 ]
-pyrogram = [
-    {file = "Pyrogram-2.0.44-py3-none-any.whl", hash = "sha256:5e44a6bb06eadd89cd7249907953e6a2180ff47d1e4237a8e521f20507d403f2"},
-    {file = "Pyrogram-2.0.44.tar.gz", hash = "sha256:3e5330b503a505af9f717e3891440a5b66fbe9d03354e3723ffb5a7782941e33"},
+Pyrogram = [
+    {file = "Pyrogram-2.0.49-py3-none-any.whl", hash = "sha256:5bdc9b7141531816e150bcc288bd08c7edf09a9b23a834e5aab534c55d5bdee0"},
+    {file = "Pyrogram-2.0.49.tar.gz", hash = "sha256:691727efc4571f6f93cca269410259f4ca6a0d701d75f6de99e7e13614fa546d"},
 ]
 pysocks = [
     {file = "PySocks-1.7.1-py27-none-any.whl", hash = "sha256:08e69f092cc6dbe92a0fdd16eeb9b9ffbc13cadfe5ca4c7bd92ffb078b293299"},
