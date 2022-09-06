@@ -1,7 +1,5 @@
 FROM ghcr.io/divideprojects/docker-python-base:latest
 WORKDIR /app
-COPY setup setup
-RUN setup/ffmpeg-setup.sh
 COPY pyproject.toml pyproject.toml
 COPY poetry.lock poetry.lock
 RUN poetry export -f requirements.txt --without-hashes --output requirements.txt \
