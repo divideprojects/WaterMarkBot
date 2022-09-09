@@ -32,6 +32,7 @@ jobs:
       repo_name: ${{ needs.get-repo-info.outputs.repo_name }}
       tag: ${{ needs.get-repo-info.outputs.tag }}
       dockerhub: false
+      update_description: false
     secrets:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
