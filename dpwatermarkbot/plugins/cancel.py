@@ -26,13 +26,7 @@ async def cancel_watermark_adder(c: DPWaterMarkBot, m: Message):
     )
 
     if "pid" in LocalDB.getall():
-        try:
-            kill(LocalDB.get("pid"), 9)
-        except ProcessLookupError:
-            LOGGER.error(f"{LocalDB.get('pid')} Process not running!")
-        except Exception as err:
-            LOGGER.error(err)
-            LOGGER.error(format_exc())
+        delete_process()
 
     await delete_all()
     await c.send_message(
@@ -63,13 +57,7 @@ async def cancel_task(c: DPWaterMarkBot, q: CallbackQuery):
 
     elif ctype.startswith("_pid"):
         if "pid" in LocalDB.getall():
-            try:
-                kill(LocalDB.get("pid"), 9)
-            except ProcessLookupError:
-                LOGGER.error(f"{LocalDB.get('pid')} Process not running!")
-            except Exception as err:
-                LOGGER.error(err)
-                LOGGER.error(format_exc())
+            delete_process()
 
         await delete_all()
         await c.send_message(
@@ -87,4 +75,18 @@ async def cancel_task(c: DPWaterMarkBot, q: CallbackQuery):
             LOGGER.error(format_exc())
 
     await q.answer("Watermark Adding Process Stopped!")
+    return
+
+
+def delete_process():
+    """
+    Delete all the process related data
+    """
+    try:
+        kill(LocalDB.get("pid"), 9)
+    except ProcessLookupError:
+        LOGGER.error(f"{LocalDB.get('pid')} Process not running!")
+    except Exception as err:
+        LOGGER.error(err)
+        LOGGER.error(format_exc())
     return
