@@ -20,7 +20,7 @@ class Vars:
     STREAMTAPE_API_USERNAME = config("STREAMTAPE_API_USERNAME")
     MESSAGE_DUMP = int(config("MESSAGE_DUMP"))
     PREFIX_HANDLER = config("PREFIX_HANDLER", default="/ !").split()
-    SUPPORT_GROUP = config("SUPPORT_GROUP", default="@DivideProjectsDiscussion")
+    SUPPORT_GROUP = config("SUPPORT_GROUP", default="@DivideSupport")
     AUTH_CHANNEL = config("AUTH_CHANNEL", default="@DivideProjects")
     PRESET = config("PRESET", default="ultrafast")
     OWNER_ID = int(config("OWNER_ID", default=777000))
