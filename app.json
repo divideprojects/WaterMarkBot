@@ -8,7 +8,7 @@
         "bot"
     ],
     "repository": "https://github.com/Divkix/WaterMarkBot",
-    "website": "https://telegram.dog/Divkix",
+    "website": "https://divkix.me",
     "success_url": "https://t.me/DivideProjects",
     "env": {
         "API_ID": {
@@ -39,27 +39,27 @@
             "value": "ultrafast"
         },
         "POETRY_VERSION": {
-         "description": "Settings this will change poetry version. DO NOT CHANGE IF YOU DON'T KNOW WHAT YOURE DOING",
-         "required": true,
-         "value": "1.1.6"
-      },
-      "PYTHON_RUNTIME_VERSION": {
-         "description": "Settings this will change the python version. DO NOT CHANGE IF YOU DON'T KNOW WHAT YOURE DOING",
-         "required": true,
-         "value": "3.9.5"
-      }
+            "description": "Settings this will change poetry version. DO NOT CHANGE IF YOU DON'T KNOW WHAT YOURE DOING",
+            "required": true,
+            "value": "1.1.6"
+        },
+        "PYTHON_RUNTIME_VERSION": {
+            "description": "Settings this will change the python version. DO NOT CHANGE IF YOU DON'T KNOW WHAT YOURE DOING",
+            "required": true,
+            "value": "3.9.5"
+        }
     },
-     "buildpacks": [
-    {
-      "url": "https://github.com/moneymeets/python-poetry-buildpack.git"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-    },
-    {
-      "url": "heroku/python"
-    }
-   ],
+    "buildpacks": [
+        {
+            "url": "https://github.com/moneymeets/python-poetry-buildpack.git"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ],
     "formation": {
         "worker": {
             "quantity": 1,
