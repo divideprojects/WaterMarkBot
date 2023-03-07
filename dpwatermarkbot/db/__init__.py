@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Any, Dict, List
+from typing import Any
 
 from pickledb_ujson import load
 
@@ -28,7 +28,7 @@ class MainDB(MongoDB):
         self.user_id = user_id
         self.user_info = self.__ensure_in_db()  # get user_info from database
 
-    def get_info(self) -> Dict[str, Any]:
+    def get_info(self) -> dict[str, Any]:
         """
         Function used to get info about a certain user
         """
@@ -106,7 +106,7 @@ class MainDB(MongoDB):
         return self.user_info.get("watermark_fileid", None)
 
     @staticmethod
-    def get_all_users() -> List[int]:
+    def get_all_users() -> list[int]:
         """
         This function is used to get all the users stored in database
         """
@@ -127,7 +127,7 @@ class MainDB(MongoDB):
         """
         return MongoDB(MainDB.db_name).delete_one({"_id": user_id})
 
-    def __ensure_in_db(self) -> Dict[str, Any]:
+    def __ensure_in_db(self) -> dict[str, Any]:
         """
         This function ensures that the user is already in db and fixes data to latest schema
         """
