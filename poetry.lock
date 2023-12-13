@@ -390,18 +390,18 @@ files = [
 
 [[package]]
 name = "hachoir"
-version = "3.2.0"
+version = "3.3.0"
 description = "Package of Hachoir parsers used to open binary files"
 optional = false
 python-versions = "*"
 files = [
-    {file = "hachoir-3.2.0-py3-none-any.whl", hash = "sha256:6e6c03ed40fa741d0cd91ee7ec381d17ef3e7f62be3e8c7562d9acb3e70b04fe"},
-    {file = "hachoir-3.2.0.tar.gz", hash = "sha256:38e3d84ecd1c75f2b22422acf5881a1d34ad4cffa7088f7e1a4c4690d12ce664"},
+    {file = "hachoir-3.3.0-py3-none-any.whl", hash = "sha256:9f721af67867d933383398b9605bc388db25f55dde1034d2bfde91f05e5d9910"},
+    {file = "hachoir-3.3.0.tar.gz", hash = "sha256:fd7679f649c17ee45ab2ba5eacddc702c667ea5200c0a1fd063d4615fa7270d2"},
 ]
 
 [package.extras]
 urwid = ["urwid (==1.3.1)"]
-wx = ["darkdetect", "wxPython (==4.*)"]
+wx = ["wxPython (==4.*)"]
 
 [[package]]
 name = "humanfriendly"
@@ -1397,4 +1397,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "c8da5b28ae895aba0f897db274a9e3ecdd070e1b8ba45e5dbe4c6217ab918d85"
+content-hash = "bda565b5c17f4aa0f75906d45a75fe8d2d8812d6328793bea595feefb73a8fd1"
