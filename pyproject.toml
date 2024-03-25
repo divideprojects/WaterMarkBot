@@ -23,7 +23,7 @@ pickledb-ujson = "^1.0.16"
 [tool.poetry.dev-dependencies]
 black = "^23.12.1"
 isort = "^5.13.2"
-pre-commit = "^3.6.2"
+pre-commit = "^3.7.0"
 pyclean = "^2.7.6"
 pylint = "^2.17.7"
 
