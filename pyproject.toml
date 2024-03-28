@@ -24,7 +24,7 @@ pickledb-ujson = "^1.0.16"
 black = "^23.12.1"
 isort = "^5.13.2"
 pre-commit = "^3.7.0"
-pyclean = "^2.7.6"
+pyclean = "^3.0.0"
 pylint = "^2.17.7"
 
 [build-system]
